@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+           <hibernate-mapping>  
+          <class name="com.bridgeLabz.mappingDemo.dto.Address" table="add_map1">  
+          <id name="add_id">  
+          <generator class="foreign">  
+          <param name="property">emp</param>  
+          </generator>  
+          </id>  
+          <property name="pincode"></property>  
+          <property name="city"></property>  
+            
+          <one-to-one name="emp"></one-to-one>  
+          </class>  
+            
+          </hibernate-mapping>  
